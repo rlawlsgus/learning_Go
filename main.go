@@ -3,9 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	a := 2
-	b := &a
-	*b = 20
-	// why not b := *&a ????????
-	fmt.Println(a)
+	names := []string{"kim", "nico", "lynn"}
+	names = append(names, "flynn")
+	fmt.Println(names)
 }
